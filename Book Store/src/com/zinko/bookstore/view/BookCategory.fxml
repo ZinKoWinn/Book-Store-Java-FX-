@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="530.0" prefWidth="750.0" styleClass="view" stylesheets="@ui_design.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zinko.bookstore.view.BookCategory">
+   <children>
+      <HBox styleClass="view_wrap">
+        <children>
+            <TextField fx:id="name" promptText="Enter Category Name" styleClass="txt-fld" />
+            <Button mnemonicParsing="false" onAction="#add" styleClass="btn" text="ADD" />
+            <Button mnemonicParsing="false" onAction="#upload" styleClass="btn" text="UPLOAD" />
+            <Button mnemonicParsing="false" onAction="#search" styleClass="btn" text="SEARCH" />
+            <Button mnemonicParsing="false" onAction="#clear" styleClass="btn" text="CLEAR" />
+         </children>
+      </HBox>
+       <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="ScrollPane" VBox.vgrow="ALWAYS">
+        <content>
+            <FlowPane fx:id="category_box" styleClass="FlowPane" />
+        </content>
+      </ScrollPane>
+   </children>
+</VBox>

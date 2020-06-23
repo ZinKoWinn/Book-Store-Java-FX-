@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="main" stylesheets="@ui_design.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zinko.bookstore.view.MainFrame">
+	<children>
+		<VBox fx:id="sideBar" prefHeight="200.0" prefWidth="100.0" styleClass="side-bar">
+			<children>
+				<VBox styleClass="header">
+					<children>
+						<ImageView fitHeight="91.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../../drawer_image.png" />
+							</image>
+						</ImageView>
+						<Line endX="10.5" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+						<Label text=" Book Sotre" />
+					</children>
+				</VBox>
+				<VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+					<children>
+						<HBox onMouseClicked="#showHome" prefHeight="100.0" prefWidth="200.0">
+							<children>
+								<HBox styleClass="svg-holder">
+									<children>
+										<SVGPath content="M12 3c0 0-6.186 5.34-9.643 8.232-0.203 0.184-0.357 0.452-0.357 0.768 0 0.553 0.447 1 1 1h2v7c0 0.553 0.447 1 1 1h3c0.553 0 1-0.448 1-1v-4h4v4c0 0.552 0.447 1 1 1h3c0.553 0 1-0.447 1-1v-7h2c0.553 0 1-0.447 1-1 0-0.316-0.154-0.584-0.383-0.768-3.433-2.892-9.617-8.232-9.617-8.232z" styleClass="svg" />
+									</children>
+								</HBox>
+								<Label styleClass="lbl" text="Home" />
+							</children>
+                     <styleClass>
+                        <String fx:value="nav-btn" />
+                        <String fx:value="active" />
+                     </styleClass>
+						</HBox>
+						<HBox onMouseClicked="#showCategory" prefHeight="100.0" prefWidth="200.0" styleClass="nav-btn">
+							<children>
+								<HBox styleClass="svg-holder">
+									<children>
+										<SVGPath content="M9 2h-5c-1.103 0-2 0.896-2 2v5c0 1.104 0.897 2 2 2h5c1.103 0 2-0.896 2-2v-5c0-1.104-0.897-2-2-2zM9 9h-5v-5h5v5zM20 2h-5c-1.104 0-2 0.896-2 2v5c0 1.104 0.896 2 2 2h5c1.104 0 2-0.896 2-2v-5c0-1.104-0.896-2-2-2zM20 9h-5v-5h5v5zM9 13h-5c-1.103 0-2 0.896-2 2v5c0 1.104 0.897 2 2 2h5c1.103 0 2-0.896 2-2v-5c0-1.104-0.897-2-2-2zM9 20h-5v-5h5v5zM20 13h-5c-1.104 0-2 0.896-2 2v5c0 1.104 0.896 2 2 2h5c1.104 0 2-0.896 2-2v-5c0-1.104-0.896-2-2-2zM20 20h-5v-5h5v5z" styleClass="svg" />
+									</children>
+								</HBox>
+								<Label styleClass="lbl" text="Category" />
+							</children>
+						</HBox>
+						<HBox onMouseClicked="#showBook" prefHeight="100.0" prefWidth="200.0" styleClass="nav-btn">
+							<children>
+								<HBox styleClass="svg-holder">
+									<children>
+										<SVGPath content="M18 3h-11c-0.265 0-0.52 0.105-0.707 0.293l-3 3c-0.020 0.020-0.039 0.040-0.057 0.062-0.139 0.165-0.225 0.373-0.235 0.6-0.001 0.018-0.001 0.035-0.001 0.053v10.992c0 1.654 1.346 3 3 3h9c1.304 0 2.416-0.836 2.829-2h0.671c1.402 0 2.5-1.317 2.5-3v-10c0-1.654-1.346-3-3-3zM6 19c-0.551 0-1-0.448-1-1v-10h2v11h-1zM16 18c0 0.552-0.449 1-1 1h-7v-11h7c0.551 0 1 0.448 1 1v9zM19 16c0 0.62-0.324 1-0.5 1h-0.5v-8c0-1.654-1.346-3-3-3h-8.586l1-1h10.586c0.551 0 1 0.448 1 1v10z" styleClass="svg" />
+									</children>
+								</HBox>
+								<Label styleClass="lbl" text="Book" />
+							</children>
+						</HBox>
+						<HBox onMouseClicked="#showAuthor" prefHeight="100.0" prefWidth="200.0" styleClass="nav-btn">
+							<children>
+								<HBox styleClass="svg-holder">
+									<children>
+										<SVGPath content="M9 14c1.381 0 2.631-0.56 3.536-1.465 0.904-0.904 1.464-2.154 1.464-3.535s-0.56-2.631-1.464-3.535c-0.905-0.905-2.155-1.465-3.536-1.465s-2.631 0.56-3.536 1.465c-0.904 0.904-1.464 2.154-1.464 3.535s0.56 2.631 1.464 3.535c0.905 0.905 2.155 1.465 3.536 1.465zM9 21c3.518 0 6-1 6-2 0-2-2.354-4-6-4-3.75 0-6 2-6 4 0 1 2.25 2 6 2z" styleClass="svg" />
+									</children>
+								</HBox>
+								<Label styleClass="lbl" text="Author" />
+							</children>
+						</HBox>
+                  <HBox onMouseClicked="#showSaleHistory" prefHeight="100.0" prefWidth="200.0" styleClass="nav-btn">
+                     <children>
+                        <HBox styleClass="svg-holder">
+                           <children>
+                              <SVGPath content="M14.016 14.016v1.969h-7.031v-1.969h7.031zM18.984 18.984v-10.969h-13.969v10.969h13.969zM18.984 3q0.797 0 1.406 0.609t0.609 1.406v13.969q0 0.797-0.609 1.406t-1.406 0.609h-13.969q-0.844 0-1.43-0.586t-0.586-1.43v-13.969q0-0.797 0.586-1.406t1.43-0.609h0.984v-2.016h2.016v2.016h7.969v-2.016h2.016v2.016h0.984zM17.016 9.984v2.016h-10.031v-2.016h10.031z" styleClass="svg" />
+                           </children>
+                        </HBox>
+                        <Label styleClass="lbl" text="Sale History" />
+                     </children>
+                  </HBox>
+					</children>
+				</VBox>
+				<VBox prefHeight="200.0" prefWidth="100.0" styleClass="footer">
+					<children>
+						<Label fx:id="footer" styleClass="lbl" text="By Zin Ko Winn" />
+					</children>
+				</VBox>
+			</children>
+		</VBox>
+		<VBox HBox.hgrow="ALWAYS">
+			<children>
+				<HBox styleClass="label-wrap">
+					<children>
+						<Label fx:id="title" text="My Book Store" />
+					</children>
+				</HBox>
+				<StackPane fx:id="viewHolder" alignment="TOP_LEFT" prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+			</children>
+		</VBox>
+	</children>
+</HBox>
