@@ -20,16 +20,16 @@ This project is a final project of the Java Developer Class (Java SE Online).
 ```
 - Sale Book View
 
-<img src="https://user-images.githubusercontent.com/61304140/85507435-5fbe5180-b618-11ea-9978-630fc444ffc3.PNG">
+<img src="https://user-images.githubusercontent.com/61304140/85509693-7070c680-b61c-11ea-9534-a9bdb6a9dd5f.PNG">
 
 - Category View
-<img src="https://user-images.githubusercontent.com/61304140/85508004-3fdb5d80-b619-11ea-9a59-9be387d2ddb7.PNG">
+<img src="https://user-images.githubusercontent.com/61304140/85509727-7b2b5b80-b61c-11ea-8bf5-ec3c5f65b01f.PNG">
 
 - Book List View
-<img src="https://user-images.githubusercontent.com/61304140/85507627-aca22800-b618-11ea-89d5-8c11696b22da.PNG">
+<img src="https://user-images.githubusercontent.com/61304140/85509789-8da59500-b61c-11ea-8b44-0ef40ea90b7c.PNG">
 
 - Author List View
-<img src="https://user-images.githubusercontent.com/61304140/85507780-ea9f4c00-b618-11ea-9b3a-ea25d8bf7838.PNG">
+<img src="https://user-images.githubusercontent.com/61304140/85510000-cba2b900-b61c-11ea-9ab2-ba0f813f75a5.PNG">
 
 - Sale History View
-<img src="https://user-images.githubusercontent.com/61304140/85507870-099dde00-b619-11ea-8f07-7e0436c6bbb2.PNG">
+<img src="https://user-images.githubusercontent.com/61304140/85509945-c0e82400-b61c-11ea-83e3-0be6ddf5a55a.PNG">
