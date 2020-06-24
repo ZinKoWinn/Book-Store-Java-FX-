@@ -6,14 +6,8 @@
  ```python
 This project is a final project of the Java Developer Class (Java SE Online).
 ```
-
-
-
-
-
-
 **This project includes :**
-
+```
 - Sale View
 
 - Category
@@ -23,3 +17,4 @@ This project is a final project of the Java Developer Class (Java SE Online).
 - Book List
 
 - Sale History
+```
