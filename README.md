@@ -1,7 +1,7 @@
-#  👨‍💻 Final Project ( Book-Store )
+#  👨‍💻 JavaFx Project (Mini POS Book-Store )
 
  ```python
-This project is a final project of the Java Developer Class (Java SE Online).
+This application is Mini Point Of Sale system for book store, designed to be a simple programm for small business to tracks sales information. 
 ```
 **This project includes :**
 ```python
